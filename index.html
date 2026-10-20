@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <title>JING STUDIO | Photography</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: #f7f5f0;
+      color: #29251f;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      padding: 30px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-family: Georgia, serif;
+      font-size: 26px;
+      letter-spacing: 3px;
+    }
+
+    nav {
+      display: flex;
+      gap: 30px;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    nav a {
+      font-size: 12px;
+      letter-spacing: 1px;
+    }
+
+    .hero {
+      min-height: 80vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 60px 8%;
+      background: #ded6cb;
+    }
+
+    .hero h1 {
+      font-family: Georgia, serif;
+      font-weight: normal;
+      font-size: clamp(48px, 7vw, 100px);
+      line-height: 1.1;
+    }
+
+    .subtitle {
+      font-size: 12px;
+      letter-spacing: 3px;
+    }
+
+    .intro {
+      padding: 120px 10%;
+      text-align: center;
+    }
+
+    .intro h2 {
+      font-family: Georgia, serif;
+      font-size: clamp(30px, 4vw, 55px);
+      font-weight: normal;
+    }
+
+    .portfolio {
+      padding: 80px 7%;
+      background: #eee9e1;
+      text-align: center;
+    }
+
+    .portfolio h2 {
+      font-family: Georgia, serif;
+      font-size: 48px;
+      font-weight: normal;
+    }
+
+    footer {
+      padding: 60px 7%;
+      text-align: center;
+      font-size: 12px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      nav {
+        gap: 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <a href="#home" class="logo">JING STUDIO</a>
+
+    <nav>
+      <a href="#about">ABOUT</a>
+      <a href="#portfolio">PORTFOLIO</a>
+      <a href="#contact">CONTACT</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div>
+        <p class="subtitle">FINE ART PHOTOGRAPHY</p>
+        <h1>The Art of Remembering.</h1>
+        <p>Timeless imagery. Thoughtful moments.</p>
+      </div>
+    </section>
+
+    <section class="intro" id="about">
+      <p class="subtitle">WELCOME TO JING STUDIO</p>
+      <h2>
+        Capturing beautiful moments
+        through an artistic lens.
+      </h2>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+      <p class="subtitle">OUR WORK</p>
+      <h2>Selected Stories</h2>
+      <p>A collection of moments worth remembering.</p>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <p>JING STUDIO © 2026</p>
+    <p>Photography · Art · Storytelling</p>
+  </footer>
+
+</body>
+</html>
