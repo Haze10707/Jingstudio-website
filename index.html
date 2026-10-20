@@ -53,22 +53,72 @@
       letter-spacing: 1px;
     }
 
-    .hero {
-      min-height: 80vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      padding: 60px 8%;
-      background: #ded6cb;
-    }
+   
+.hero {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 100px 8%;
 
-    .hero h1 {
-      font-family: Georgia, serif;
-      font-weight: normal;
-      font-size: clamp(48px, 7vw, 100px);
-      line-height: 1.1;
-    }
+  background-image:
+    linear-gradient(
+      rgba(0, 0, 0, 0.22),
+      rgba(0, 0, 0, 0.30)
+    ),
+    url("https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=2000&q=85");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  color: #ffffff;
+}
+
+
+    
+.hero h1 {
+  font-family: Georgia, serif;
+  font-weight: normal;
+  font-size: clamp(48px, 7vw, 105px);
+  line-height: 1.08;
+  letter-spacing: -2px;
+  max-width: 950px;
+  margin: 30px auto;
+  animation: fadeUp 1.6s ease-out both;
+}
+
+.hero .subtitle {
+  color: #ffffff;
+  font-size: 12px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.hero p {
+  animation: fadeUp 1.8s ease-out both;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(35px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero h1,
+  .hero p {
+    animation: none;
+  }
+}
+
 
     .subtitle {
       font-size: 12px;
@@ -130,13 +180,24 @@
   </header>
 
   <main>
-    <section class="hero" id="home">
-      <div>
-        <p class="subtitle">FINE ART PHOTOGRAPHY</p>
-        <h1>The Art of Remembering.</h1>
-        <p>Timeless imagery. Thoughtful moments.</p>
-      </div>
-    </section>
+   
+<section class="hero" id="home">
+  <div>
+    <p class="subtitle">
+      JING STUDIO · WEDDING PHOTOGRAPHY
+    </p>
+
+    <h1>
+      A Love Story,<br>
+      Beautifully Told.
+    </h1>
+
+    <p>
+      Timeless imagery for moments that last forever.
+    </p>
+  </div>
+</section>
+
 
     <section class="intro" id="about">
       <p class="subtitle">WELCOME TO JING STUDIO</p>
